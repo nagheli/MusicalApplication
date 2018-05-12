@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="5dp">
+
+<ImageView
+    android:id="@+id/music"
+    android:src="@drawable/note"
+    android:layout_width="@dimen/dim45"
+    android:layout_height="@dimen/dim45"
+    android:layout_alignTop="@+id/stop" />
+<TextView
+    android:id="@+id/songName"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    android:text="@string/songName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="@dimen/dim10"
+    android:layout_alignLeft="@+id/singerName"
+    android:layout_alignStart="@+id/singerName" />
+
+<TextView
+    android:id="@+id/singerName"
+    android:textColor="@color/black"
+    android:textSize="18sp"
+    android:text="@string/singer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dim15"
+    android:layout_marginStart="@dimen/dim15"
+    android:layout_alignBottom="@+id/music"
+    android:layout_toRightOf="@+id/music"
+    android:layout_toEndOf="@+id/music" />
+
+<ImageView
+    android:id="@+id/play"
+    android:layout_marginTop="@dimen/dim15"
+    android:layout_toLeftOf="@id/stop"
+    android:src="@drawable/play"
+    android:layout_width="@dimen/dim55"
+    android:layout_height="@dimen/dim55" />
+
+<ImageView
+    android:id="@+id/stop"
+    android:layout_marginTop="@dimen/dim15"
+    android:src="@drawable/stop"
+    android:layout_alignParentRight="true"
+    android:layout_width="@dimen/dim55"
+    android:layout_height="@dimen/dim55" />
+
+</RelativeLayout>

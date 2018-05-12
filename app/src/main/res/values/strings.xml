@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Musical Application</string>
+    <string name="albumsActivity">Albums</string>
+    <string name="songsActivity">Songs</string>
+    <string name="songs">Songs</string>
+    <string name="albums">Albums</string>
+    <string name="songName">Song name</string>
+    <string name="singer">Singer</string>
+    <string name="adeleSongs">Adele Songs</string>
+    <string name="brunoMarsSongs">Bruno Mars Songs</string>
+    <string name="edSheeranSongs">Ed Sheeran Songs</string>
+    <string name="kygoSongs">Kygo Songs</string>
+    <string name="adele">Adele</string>
+    <string name="album">25</string>
+    <string name="adelebiography">25 is the third studio album by English singer-songwriter Adele. It was released on 20 November 2015, through XL Recordings nearly five years after the release and international success of her second studio album 21. Titled as a reflection of her life and frame of mind at 25 years old, 25 is a "make-up record".Like 21, Adele worked with producer and songwriter Paul Epworth and Ryan Tedder, along with new collaborations with Max Martin and Shellback, Greg Kurstin, Danger Mouse, the Smeezingtons, Samuel Dixon, and Tobias Jesso Jr.</string>
+    <string name="brunobiography">24K Magic (rendered in Roman numerals as XXIVK Magic) is the third studio album by American singer and songwriter Bruno Mars. It was released worldwide on November 18, 2016, by Atlantic Records. Recording sessions for the album took place between Fall 2015 and September 2016 at Glenwood Place Studios in Burbank, California.</string>
+    <string name="edbiography">"Divide" is the third studio album by English singer-songwriter Ed Sheeran. It was released on 3 March 2017 through Asylum Records and Atlantic Records. "Castle on the Hill" and "Shape of You" were released as the albums lead singles on 6 January 2017.</string>
+    <string name="kygobiography">Kids in Love is the second studio album by Norwegian DJ and record producer Kygo, featuring the likes of John Newman, Jason Walker, Oliver Nelson, Bonnie McKee, OneRepublic, Wrabel, The Night Game, James Abrahart and Billy Raffoul. It was released via Sony Music and Ultra Records on 3 November 2017. The albums lead single and title track, "Kids in Love", was released on 20 October 2017.</string>
+</resources>

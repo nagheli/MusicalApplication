@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/dim120"
+        android:layout_height="@dimen/dim120" />
+
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dim16">
+
+        <TextView
+            android:id="@+id/albums_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/album" />
+
+        <TextView
+            android:id="@+id/albums_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/adele" />
+    </LinearLayout>
+</LinearLayout>
