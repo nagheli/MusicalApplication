@@ -22,12 +22,14 @@
             android:id="@+id/albums_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/dim22sp"
             tools:text="@string/album" />
 
         <TextView
             android:id="@+id/albums_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/dim20sp"
             tools:text="@string/adele" />
     </LinearLayout>
 </LinearLayout>

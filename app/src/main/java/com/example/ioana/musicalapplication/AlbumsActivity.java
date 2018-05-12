@@ -19,13 +19,13 @@ public class AlbumsActivity extends AppCompatActivity {
 
         //Create an array of albums
         final ArrayList<Albums> album = new ArrayList<Albums>();
-        album.add(new Albums("25","Adele",R.drawable.adele));
-        album.add(new Albums("24k Magic","Bruno Mars",R.drawable.bruno));
-        album.add(new Albums("Dive","Ed Sheeran",R.drawable.divide));
-        album.add(new Albums("Kids in love","Kygo",R.drawable.kids));
+        album.add(new Albums("25", "Adele", R.drawable.adele));
+        album.add(new Albums("24k Magic", "Bruno Mars", R.drawable.bruno));
+        album.add(new Albums("Dive", "Ed Sheeran", R.drawable.divide));
+        album.add(new Albums("Kids in love", "Kygo", R.drawable.kids));
 
         AlbumsAdapter adapter = new AlbumsAdapter(this, album);
-        ListView listView = (ListView) findViewById(R.id.list);
+        final ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
 
 
@@ -33,27 +33,23 @@ public class AlbumsActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             public void onItemClick(AdapterView<?> adapter, View view, int position, long arg) {
-                                Intent intent = new Intent(AlbumsActivity.this, AdeleBiography.class);
-                startActivity(intent);}
-        });
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-            public void onItemClick(AdapterView<?> adapter, View view, int position, long arg) {
-                Intent intent = new Intent(AlbumsActivity.this, BrunoMarsBiography.class);
-                startActivity(intent);}
-        });
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-           public void onItemClick(AdapterView<?> adapter, View view, int position, long arg) {
-                Intent intent = new Intent(AlbumsActivity.this, EdSheeranBiography.class);
-                startActivity(intent);}
-        });
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-            public void onItemClick(AdapterView<?> adapter, View view, int position, long arg) {
-                Intent intent = new Intent(AlbumsActivity.this, KygoBiography.class);
-                startActivity(intent);}
+                if (position == 0) {
+                    Intent intent = new Intent(AlbumsActivity.this, AdeleBiography.class);
+                    startActivityForResult(intent, 0);
+                }
+                if (position == 1) {
+                    Intent intent1 = new Intent(AlbumsActivity.this, BrunoMarsBiography.class);
+                    startActivityForResult(intent1, 1);
+                }
+                if (position == 2) {
+                    Intent intent2 = new Intent(AlbumsActivity.this, EdSheeranBiography.class);
+                    startActivityForResult(intent2, 2);
+                }
+                if (position == 3) {
+                    Intent intent3 = new Intent(AlbumsActivity.this, KygoBiography.class);
+                    startActivityForResult(intent3, 3);
+                }
+            }
         });
     }
 }

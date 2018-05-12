@@ -8,11 +8,11 @@
     tools:context=".AdeleBiography">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/adele"
+        android:layout_width="@dimen/dim400"
+        android:layout_height="@dimen/dim400"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/dim10"
-        android:layout_gravity="center_horizontal"/>
+        android:src="@drawable/adele" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -20,15 +20,16 @@
         android:layout_gravity="center_horizontal"
         android:layout_margin="@dimen/dim20"
         android:justificationMode="inter_word"
-        android:text="@string/adelebiography" />
+        android:text="@string/adelebiography"
+        android:textSize="@dimen/dim22sp" />
 
     <Button
         android:id="@+id/songButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/songs"
+        android:layout_gravity="center_horizontal"
         android:background="@color/grey"
-        android:textColor="@color/black"
-        android:layout_gravity="center_horizontal"/>
+        android:text="@string/songs"
+        android:textColor="@color/black" />
 
 </LinearLayout>

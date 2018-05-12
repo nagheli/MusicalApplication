@@ -1,34 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-tools:context=".BrunoMarsBiography">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BrunoMarsBiography">
 
-<ImageView
-    android:layout_width="400dp"
-    android:layout_height="400dp"
-    android:src="@drawable/bruno"
-    android:layout_marginTop="@dimen/dim10"
-    android:layout_gravity="center_horizontal"/>
+    <ImageView
+        android:layout_width="@dimen/dim400"
+        android:layout_height="@dimen/dim400"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dim10"
+        android:src="@drawable/bruno" />
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal"
-    android:layout_margin="@dimen/dim20"
-    android:justificationMode="inter_word"
-    android:text="@string/brunobiography" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dim20"
+        android:justificationMode="inter_word"
+        android:text="@string/brunobiography"
+        android:textSize="@dimen/dim22sp" />
 
-<Button
-    android:id="@+id/songButton"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/songs"
-    android:background="@color/grey"
-    android:textColor="@color/black"
-    android:layout_gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/songButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/grey"
+        android:text="@string/songs"
+        android:textColor="@color/black" />
 
 </LinearLayout>

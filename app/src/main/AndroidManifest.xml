@@ -22,10 +22,18 @@
         <activity
             android:name=".SongsActivity"
             android:label="@string/songsActivity" />
-        <activity android:name=".AdeleBiography" />
-        <activity android:name=".BrunoMarsBiography" />
-        <activity android:name=".EdSheeranBiography" />
-        <activity android:name=".KygoBiography"></activity>
+        <activity
+            android:name=".AdeleBiography"
+            android:label="@string/adeleBiography" />
+        <activity
+            android:name=".BrunoMarsBiography"
+            android:label="@string/brunoMarsBiography" />
+        <activity
+            android:name=".EdSheeranBiography"
+            android:label="@string/brunoMarsBiography" />
+        <activity
+            android:name=".KygoBiography"
+            android:label="@string/kygoBiography"></activity>
     </application>
 
 </manifest>

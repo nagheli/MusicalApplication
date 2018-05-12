@@ -12,4 +12,6 @@
     <dimen name="dim16">16dp</dimen>
     <dimen name="dim200">200dp</dimen>
     <dimen name="dim22sp">22sp</dimen>
+    <dimen name="dim20sp">20sp</dimen>
+    <dimen name="dim400">400dp</dimen>
 </resources>
