@@ -54,7 +54,7 @@
         </activity>
         <activity
             android:name=".EdSheeranBiography"
-            android:label="@string/brunoMarsBiography"
+            android:label="@string/edSheeranBiography"
             android:parentActivityName=".AlbumsActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
