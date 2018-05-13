@@ -1,7 +1,10 @@
 package com.example.ioana.musicalapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -30,5 +33,17 @@ public class SongsActivity extends AppCompatActivity {
 
         adapter = new SongsAdapter(this, R.layout.list_song_items, arrayList);
         songList.setAdapter(adapter);
+
+        Button albumsButton = findViewById(R.id.albumsButton);
+
+        albumsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // create a new intent to open the Albums activity
+                Intent albumsIntent = new Intent(SongsActivity.this, AlbumsActivity.class);
+                // start the new activity
+                startActivity(albumsIntent);
+            }
+        });
     }
 }
