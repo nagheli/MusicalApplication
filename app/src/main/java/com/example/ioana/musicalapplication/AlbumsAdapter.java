@@ -38,15 +38,15 @@ public class AlbumsAdapter extends ArrayAdapter<Albums> {
         Albums currentAlbums = getItem(position);
 
         //TextView in the list_album_items and set the text on the name TextView
-        TextView nameTextView = (TextView) listItemView.findViewById(R.id.albums_name);
+        TextView nameTextView =  listItemView.findViewById(R.id.albums_name);
         nameTextView.setText(currentAlbums.getmAlbumName());
 
         //TextView in the list_album_items and set the text on the name TextView
-        TextView descriptionTextView = (TextView) listItemView.findViewById(R.id.albums_description);
+        TextView descriptionTextView = listItemView.findViewById(R.id.albums_description);
         descriptionTextView.setText(currentAlbums.getmAlbumDescription());
 
         //ImageView in the llist_album_items and set image on the ImageView
-        ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
+        ImageView imageView = listItemView.findViewById(R.id.image);
         imageView.setImageResource(currentAlbums.getImageResourceId());
 
         return listItemView;

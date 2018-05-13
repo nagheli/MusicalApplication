@@ -13,7 +13,7 @@ public class BrunoMarsBiography extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bruno_mars_biography);
 
-        Button songsButton = (Button) findViewById(R.id.songButton);
+        Button songsButton = findViewById(R.id.songButton);
 
         songsButton.setOnClickListener(new View.OnClickListener() {
             @Override

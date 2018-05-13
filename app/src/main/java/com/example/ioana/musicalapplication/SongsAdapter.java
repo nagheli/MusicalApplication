@@ -53,10 +53,10 @@ public class SongsAdapter extends BaseAdapter {
             LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
             convertView = layoutInflater.inflate(layout, null);
-            viewHolder.songName = (TextView) convertView.findViewById(R.id.songName);
-            viewHolder.singerName = (TextView) convertView.findViewById(R.id.singerName);
-            viewHolder.play = (ImageView) convertView.findViewById(R.id.play);
-            viewHolder.stop = (ImageView) convertView.findViewById(R.id.stop);
+            viewHolder.songName = convertView.findViewById(R.id.songName);
+            viewHolder.singerName = convertView.findViewById(R.id.singerName);
+            viewHolder.play = convertView.findViewById(R.id.play);
+            viewHolder.stop = convertView.findViewById(R.id.stop);
 
             convertView.setTag(viewHolder);
         } else {

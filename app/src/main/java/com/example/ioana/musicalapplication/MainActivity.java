@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        ImageView albums = (ImageView) findViewById(R.id.albums);
-        ImageView songs = (ImageView) findViewById(R.id.songs);
+        ImageView albums = findViewById(R.id.albums);
+        ImageView songs = findViewById(R.id.songs);
 
 
         // set a click listener on that View

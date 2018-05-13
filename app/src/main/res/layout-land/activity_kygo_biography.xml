@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    tools:context=".BrunoMarsBiography">
+    android:orientation="vertical"
+    tools:context=".KygoBiography">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -16,7 +16,7 @@
             android:layout_height="@dimen/dim400"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/dim10"
-            android:src="@drawable/bruno" />
+            android:src="@drawable/kids" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -24,7 +24,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_margin="@dimen/dim20"
             android:justificationMode="inter_word"
-            android:text="@string/brunobiography"
+            android:text="@string/kygobiography"
             android:textSize="@dimen/dim22sp" />
 
         <Button
@@ -36,5 +36,6 @@
             android:background="@color/grey"
             android:text="@string/songs"
             android:textColor="@color/black" />
+
     </LinearLayout>
 </ScrollView>

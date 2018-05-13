@@ -12,7 +12,7 @@ public class EdSheeranBiography extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ed_sheeran_biography);
-        Button songsButton = (Button) findViewById(R.id.songButton);
+        Button songsButton = findViewById(R.id.songButton);
 
         songsButton.setOnClickListener(new View.OnClickListener() {
             @Override

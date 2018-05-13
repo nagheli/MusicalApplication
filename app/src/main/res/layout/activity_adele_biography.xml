@@ -1,35 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     android:orientation="vertical"
     tools:context=".AdeleBiography">
 
-    <ImageView
-        android:layout_width="@dimen/dim400"
-        android:layout_height="@dimen/dim400"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/dim10"
-        android:src="@drawable/adele" />
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="@dimen/dim20"
-        android:justificationMode="inter_word"
-        android:text="@string/adelebiography"
-        android:textSize="@dimen/dim22sp" />
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/songButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:background="@color/grey"
-        android:text="@string/songs"
-        android:textColor="@color/black" />
+        <ImageView
+            android:layout_width="@dimen/dim400"
+            android:layout_height="@dimen/dim400"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/adele" />
 
-</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dim20"
+            android:justificationMode="inter_word"
+            android:text="@string/adelebiography"
+            android:textSize="@dimen/dim22sp" />
+
+        <Button
+            android:id="@+id/songButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/grey"
+            android:text="@string/songs"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/dim20"/>
+    </LinearLayout>
+</ScrollView>
